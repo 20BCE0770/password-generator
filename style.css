@@ -71,3 +71,70 @@ h3{
     text-align: center;
     
 }
+.container{
+    width: 300px;
+    position: relative;
+    margin: auto;
+    border: ipx solid orange;
+}
+input{
+    width: 100%;
+    height: 50px;
+    padding: 0 40px 0 20px;
+    position: relative;
+    border: none;
+    outline: none;
+    border-radius: 5px 5px 0 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+#toggle{
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    color: #808080;
+    cursor: pointer;
+}
+.strength{
+    width: 25%;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    bottom: 5px;
+    
+}
+#strength-bar{
+    background-color: #dcdcdc;
+    height: 10px;
+    position: relative;
+    border-radius: 0 0 5px 5px;
+}
+.chandra{
+    width: 100px;
+    height: 38px;
+    background-color:green;
+    border: black;
+    border-radius: 10px;
+    color: rgb(12, 11, 11);
+    font-size: 18px;
+    float:center;
+    text-align: center;
+    cursor: pointer;
+}
+.chandra2{
+    width: 200px;
+    height: 100px;
+    background-color:green;
+    border: black;
+    border-radius: 10px;
+    color: rgb(12, 11, 11);
+    font-size: 18px;
+    float:center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+a{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
