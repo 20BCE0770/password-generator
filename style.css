@@ -1,0 +1,73 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    outline: none;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(
+        -135deg,
+        yellow,
+        orange
+    );
+}
+.bharath{
+    width: 40%;
+    min-width: 450px;
+    background-color: whitesmoke;
+    padding: 80px 30px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    box-shadow:0 15px 20px rgba(0,0,0,0.15);
+
+}
+#output{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 75%;
+    height: 35px;
+    padding: 20px 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: black;
+}
+button{
+    width:11%;
+    height: 38px;
+    background-color: transparent;
+    border: none;
+    color: rgb(12, 11, 11);
+    font-size: 18px;
+    float:right;
+    text-align: right;
+    cursor: pointer;
+}
+input[type="range"]{
+    appearance: none;
+    width: 85%;
+    height: 3.5px;
+    margin-top: 80px;
+    background-color: black;
+    border-radius: 3.5px;
+
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    width: 10%;
+    display: inline-block;
+    color: whitesmoke;
+    background-color: black;
+    margin-left: 3%;
+    border-radius: 3px;
+    font-size: 18px;
+    text-align: center;
+    
+}

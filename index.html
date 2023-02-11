@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>different passwords</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bharath">
+        <input type="text" id="output">
+        <button>
+            <i class="fas fa-random" onclick="generatePassword()"></i>
+        </button>
+        <button>
+            <i class="far fa-copy" onclick="copyto()"></i>
+        </button>
+        <input type="range" id="length" min="8" max="20" value="8" oninput="generatePassword()">
+        <h3 id="length-val">8</h3>
+    </div>
+    <script>
+        const characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*";
+        let output = document.getElementById("output");
+        function randomValue(value) {
+            return Math.floor(Math.random() * value);
+        }
+        function generatePassword() {
+            let length = document.getElementById('length').value;
+            document.getElementById("length-val").textContent = length;
+            let str = '';
+            for (let i = 0; i < length; i++) {
+                let random = randomValue(characters.length);
+                str = str + characters.charAt(random);
+            }
+            output.value = str;
+        }
+        function copyto() {
+            output.Select();
+            document.execCommand("copy");
+            alert("copied");
+        }
+        generatePassword();
+    </script>
+</body>
+
+</html>
